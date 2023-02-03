@@ -1,0 +1,60 @@
+@font-face {
+    font-family: medium;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+* {
+    user-select: none;
+    font-family: medium;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 300px ;
+}
+
+#sidebar {
+    /* max-width: 30%; */
+}
+
+.question {
+    font-size: 2rem;
+}
+
+.question_button_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.question_buttons {
+    padding: 12px;
+    background-color: red;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.question_buttons:hover {
+    transform: scale(1.05);
+}
+
+.question_buttons:active {
+    transform: scale(0.98);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.option {
+    cursor: pointer;
+}
+
+button {
+    padding: 12px;
+    font-size: 1rem;
+}

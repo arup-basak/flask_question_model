@@ -1,0 +1,200 @@
+[
+    {
+        "question": "Arab spring movement started in which country?",
+        "mcq": [
+            {
+                "option": "Syrian Arab Republic"
+            },
+            {
+                "option": "United Arab Emirates"
+            },
+            {
+                "option": "Tunisia"
+            },
+            {
+                "option": "Algeria"
+            }
+        ],
+        "ans": 3
+    },
+    {
+        "question": "Snake can't be found in which country?",
+        "mcq": [
+            {
+                "option": "Canada"
+            },
+            {
+                "option": "Rawanda"
+            },
+            {
+                "option": "Democratic Republic of the Congo"
+            },
+            {
+                "option": "Mexico"
+            }
+        ],
+        "ans": 3
+    },
+    {
+        "question": "Last physical war in which Portugal directly involved?",
+        "mcq": [
+            {
+                "option": "World War 2"
+            },
+            {
+                "option": "World War 1"
+            },
+            {
+                "option": "Iberian War"
+            },
+            {
+                "option": "Spanish Civil War"
+            }
+        ],
+        "ans": 2
+    },
+    {
+        "question": "Value of Golden Ratio?",
+        "mcq": [
+            {
+                "option": "(1 + √5)/2"
+            },
+            {
+                "option": "(1 + √e)/2"
+            },
+            {
+                "option": "(1 + √3)/2"
+            },
+            {
+                "option": "(1 + √7)/2"
+            }
+        ],
+        "ans": 1
+    },
+    {
+        "question": "First computer model brought to India for academic purposes?",
+        "mcq": [
+            {
+                "option": "IBM 1620"
+            },
+            {
+                "option": "UNIVAC 1103"
+            },
+            {
+                "option": "BESM-6"
+            },
+            {
+                "option": "BESM-9"
+            }
+        ],
+        "ans": 1
+    },
+    {
+        "question": "What is the capital of Vietnam?",
+        "mcq": [
+            {
+                "option": "Hanoi"
+            },
+            {
+                "option": "Bejing"
+            },
+            {
+                "option": "Vientiane"
+            },
+            {
+                "option": "Brunai"
+            }
+        ],
+        "ans": 1
+    },
+    {
+        "question": "What is the currency of Japan?",
+        "mcq": [
+            {
+                "option": "Yen"
+            },
+            {
+                "option": "Ringgit"
+            },
+            {
+                "option": "Yuan"
+            },
+            {
+                "option": "Pound Sterling"
+            }
+        ],
+        "ans": 1
+    },
+    {
+        "question": "What is the largest ocean in the world?",
+        "mcq": [
+            {
+                "option": "Atlantic Ocean"
+            },
+            {
+                "option": "Indian Ocean"
+            },
+            {
+                "option": "Arctic Ocean"
+            },
+            {
+                "option": "Pacific Ocean"
+            }
+        ],
+        "ans": 4
+    },
+    {
+        "question": "What is the largest mountain series in the world?",
+        "mcq": [
+            {
+                "option": "Andes"
+            },
+            {
+                "option": "Himalayas"
+            },
+            {
+                "option": "Rocky"
+            },
+            {
+                "option": "Alps"
+            }
+        ],
+        "ans": 1
+    },
+    {
+        "question": "Which is the largest landlocked country by area?",
+        "mcq": [
+            {
+                "option": "Russia"
+            },
+            {
+                "option": "Kazakstan"
+            },
+            {
+                "option": "Demcratic Republic of Congo"
+            },
+            {
+                "option": "Afganistan"
+            }
+        ],
+        "ans": 2
+    },
+    {
+        "question": "World's largest fertilizer exporter?",
+        "mcq": [
+            {
+                "option": "Russia"
+            },
+            {
+                "option": "China"
+            },
+            {
+                "option": "USA"
+            },
+            {
+                "option": "India"
+            }
+        ],
+        "ans": 1
+    }
+]

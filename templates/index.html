@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{ url_for('static', filename='styles/question_paper.css') }}>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="question_container">
+            {% for data in questions %}
+                <div class="question">{{data.question}}</div>
+                <div class="options">
+                    <!-- {% for option in options %}
+                    <div class="option">
+                        <input type="radio" name="question" id="question_one">
+                        <label for="question_one">{{option}}</label>
+                    </div>
+                    {% endfor %} -->
+                </div>
+            {% endfor %}
+        </div>
+
+        <div id="sidebar">
+            <div class="question_button_container">
+                {% for i in range(len) %}
+                    <div class="question_buttons">{{i+1}}</div>
+                {% endfor %}
+            </div>
+            <button class="submit">Submit</button>
+        </div>
+
+    </div>
+    <script>
+        const data = "{{options}}"
+    </script>
+    <script src={{ url_for('static', filename = 'js/question_paper.js') }}>
+    </script>
+</body>
+</html>
