@@ -9,16 +9,18 @@
 </head>
 <body>
     <div class="container">
-        <div class="question_container">
-            {% for data in questions %}
-                <div class="question">{{data}}</div>
-                <div class="options">
-                    {% for option in mcqs %}
-                    <div class="option">
-                        <input type="radio" name="question" id="question_one" class="option">
-                        <label for="question_one">{{option}}</label>
+        <div class="questions">
+            {% for question in data %}
+                <div class="question_container">
+                    <div class="question">{{question['question']}}</div>
+                    <div class="options">
+                        {% for obj in question['mcq'] %}
+                            <div class="option">
+                                <input type="radio" name="question" id="question_one" class="option">
+                                <label for="question_one">{{obj['option']}}</label>
+                            </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
                 </div>
             {% endfor %}
         </div>
@@ -26,7 +28,7 @@
         <div id="sidebar">
             <div class="question_button_container">
                 {% for i in range(len) %}
-                    <div class="question_buttons" onclick="changeQuestion('{{i}}')">{{i+1}}</div>
+                    <div class="question_buttons" onclick="setQuestion('{{i}}')">{{i+1}}</div>
                 {% endfor %}
             </div>
             <button class="submit">Submit</button>

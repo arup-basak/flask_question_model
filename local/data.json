@@ -54,24 +54,6 @@
         "ans": 2
     },
     {
-        "question": "Value of Golden Ratio?",
-        "mcq": [
-            {
-                "option": "(1 + √5)/2"
-            },
-            {
-                "option": "(1 + √e)/2"
-            },
-            {
-                "option": "(1 + √3)/2"
-            },
-            {
-                "option": "(1 + √7)/2"
-            }
-        ],
-        "ans": 1
-    },
-    {
         "question": "First computer model brought to India for academic purposes?",
         "mcq": [
             {

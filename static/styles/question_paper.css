@@ -13,10 +13,6 @@
     grid-template-columns: 1fr 300px ;
 }
 
-#sidebar {
-    /* max-width: 30%; */
-}
-
 .question {
     font-size: 2rem;
 }
@@ -34,6 +30,22 @@
     cursor: pointer;
     transition: 0.3s;
     font-size: 1rem;
+}
+
+.viewed {
+    background-color: brown;
+}
+
+.marked_for_letter {
+    background-color: violet;
+}
+
+.marked {
+    background-color: green;
+}
+
+.question_container {
+    display: none;
 }
 
 .question_buttons:hover {
