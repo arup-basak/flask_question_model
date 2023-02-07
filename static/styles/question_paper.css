@@ -82,5 +82,13 @@ button {
     flex-direction: column;
 }
 
-.control_buttons {
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.submit {
+    width: 100%;
 }
