@@ -74,6 +74,7 @@ body {
 button {
     padding: 12px;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .left_container {
@@ -81,5 +82,5 @@ button {
     flex-direction: column;
 }
 
-.operated_buttons {
+.control_buttons {
 }

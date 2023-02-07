@@ -1,8 +1,10 @@
 const options = document.querySelectorAll('.option')
 const questionContainer = document.querySelectorAll('.question_container')
+const questionButtons = document.querySelectorAll(".question_buttons");
 
 const previousButton = document.querySelector('#previous')
 const nextButton = document.querySelector('#next')
+const markButton = document.querySelector('#mark')
 
 let current = -1
 let totalQuestions = questionContainer.length;
@@ -43,6 +45,17 @@ previousButton.addEventListener('click', () => {
 
 nextButton.addEventListener('click', () => {
     setQuestion(current + 1)
+})
+
+markButton.addEventListener('click', () => {
+    const markedClassName = "marked_for_letter";
+    if (!questionButtons[current].classList.contains(markedClassName)) {
+        questionButtons[current].classList.add(markedClassName);
+    }
+    else {
+        questionButtons[current].classList.remove(markedClassName)
+
+    }
 })
 
 setQuestion(0)
