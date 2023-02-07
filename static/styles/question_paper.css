@@ -8,6 +8,11 @@
     font-family: medium;
 }
 
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 300px ;
@@ -69,4 +74,12 @@
 button {
     padding: 12px;
     font-size: 1rem;
+}
+
+.left_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.operated_buttons {
 }
