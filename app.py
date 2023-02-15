@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import json
 import numpy as np
 
@@ -6,11 +6,6 @@ app = Flask(__name__)
 
 f = open('./local/data.json')
 json_arr = json.load(f)
-
-
-@app.route("/")
-def main_page():
-    return render_template('index.html', len=len(json_arr), data=json_arr)
 
 def match(answers):
     correct = 0
@@ -21,6 +16,16 @@ def match(answers):
             correct += 1
     return correct
 
+
+@app.route("/")
+def main_page():
+    return render_template('index.html', len=len(json_arr), data=json_arr)
+
+
+@app.route('/exam/answers', methods=['GET', 'POST'])
+def answers():
+    if(request.method == 'GET'):
+        return 0
 
 if __name__ == "__main__":
     app.run(debug=True)

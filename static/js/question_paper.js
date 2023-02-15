@@ -6,6 +6,9 @@ const previousButton = document.querySelector('#previous')
 const nextButton = document.querySelector('#next')
 const markButton = document.querySelector('#mark')
 
+const submit = document.querySelector('#submit')
+
+
 let current = -1
 let totalQuestions = questionContainer.length;
 
@@ -56,6 +59,34 @@ markButton.addEventListener('click', () => {
         questionButtons[current].classList.remove(markedClassName)
 
     }
+})
+
+submit.addEventListener("click", () => {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open('GET', '/exam/answers')
+    xhttp.send("This is Sent by My Device")
+    xhttp.onload = function() {
+        // if (xhttp.status != 200) { // analyze HTTP status of the response
+        //   console.log(`Error ${xhttp.status}: ${xhttp.statusText}`); // e.g. 404: Not Found
+        // } else { // show the result
+        //   console.log(`Done, got ${xhttp.response.length} bytes`); // response is the server response
+        // }
+        console.log(xhttp.response)
+      };
+      
+      xhttp.onprogress = function(event) {
+        console.log(event)
+        // if (event.lengthComputable) {
+        //   console.log(`Received ${event.loaded} of ${event.total} bytes`);
+        // } else {
+        //   console.log(`Received ${event.loaded} bytes`); // no Content-Length
+        // }
+      
+      };
+      
+      xhttp.onerror = function() {
+        alert("Request failed");
+      };
 })
 
 setQuestion(0)
