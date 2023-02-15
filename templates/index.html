@@ -14,11 +14,12 @@
                 {% for question in data %}
                     <div class="question_container">
                         <div class="question">{{question['question']}}</div>
+                        {% set curr_question = loop.index0 %}
                         <div class="options">
                             {% for obj in question['mcq'] %}
                                 <div class="option">
-                                    <input type="radio" name="question" id="{{ loop.index0 }}" class="option">
-                                    <label for="{{ loop.index0 }}">{{obj['option']}}</label>
+                                    <input type="radio" name="{{ curr_question }}" id="{{ curr_question }}{{ loop.index0 }}" class="option">
+                                    <label for="{{ curr_question }}{{ loop.index0 }}">{{obj['option']}}</label>
                                 </div>
                             {% endfor %}
                         </div>
