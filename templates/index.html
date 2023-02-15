@@ -17,8 +17,8 @@
                         <div class="options">
                             {% for obj in question['mcq'] %}
                                 <div class="option">
-                                    <input type="radio" name="question" id="" class="option">
-                                    <label for="">{{obj['option']}}</label>
+                                    <input type="radio" name="question" id="{{ loop.index0 }}" class="option">
+                                    <label for="{{ loop.index0 }}">{{obj['option']}}</label>
                                 </div>
                             {% endfor %}
                         </div>
